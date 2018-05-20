@@ -6,7 +6,7 @@ self.addEventListener('push', function(event) {
   const title = 'Bauman Vizualizer Demo';
   const options = {
     body: 'Legen... wait for it... dary!',
-    icon: 'images/icon.png',
+    icon: 'styles/icon.png',
   };
 
   event.waitUntil(self.registration.showNotification(title, options));

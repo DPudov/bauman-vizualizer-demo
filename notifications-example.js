@@ -26,7 +26,7 @@
     const options = {
       body: 'Это тестовое уведомление.\n' +
         'And it is legen... wait for it... dary!',
-      icon: '/images/icon.png',
+      icon: '/styles/icon.png',
       tag: 'example-notification',
     };
     registration.showNotification(title, options);
