@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD35lLfDH05TL2ciBmn-pgNTUZi7rWTDvs",
+    authDomain: "bauman-vizualizer.firebaseapp.com",
+    databaseURL: "https://bauman-vizualizer.firebaseio.com",
+    projectId: "bauman-vizualizer",
+    storageBucket: "bauman-vizualizer.appspot.com",
+    messagingSenderId: "307543277844"
+  };
+  firebase.initializeApp(config);
+</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bauman Vizualizer Demo</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Bauman Vizualizer Demo</h1>
+  </header>
+
+  <main>
+    <p>Добро пожаловать в демо-версию проекта Bauman Vizualizer. Здесь вы можете опробовать некоторый функционал</p>
+    <p>
+      <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        Включить пуш-уведомления
+      </button>
+    </p>
+    <section class="subscription-details js-subscription-details is-invisible">
+      <p>Как только вы подписались, вы получаете строку для json строку для отправки пуш-уведомления</p>
+      <pre><code class="js-subscription-json"></code></pre>
+    </section>
+    <p class="demo-btns">
+      <button class="js-notification-overview" disabled>Пример уведомления</button>
+    </p>
+
+  </main>
+
+  <script src="scripts/main.js"></script>
+  <script src="notification-examples.js"></script>
+  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+</html>
