@@ -41,7 +41,7 @@ function subscribeUser() {
   .then(function(subscription) {
     console.log('Успешная подписка.');
 
-    updateSubscriptionOnServer(subscription);
+  //  updateSubscriptionOnServer(subscription);
 
     isSubscribed = true;
 
@@ -64,7 +64,7 @@ function unsubscribeUser() {
     console.log('Ошибка при отписке', error);
   })
   .then(function() {
-    updateSubscriptionOnServer(null);
+ //   updateSubscriptionOnServer(null);
 
     console.log('Пользователь отписался.');
     isSubscribed = false;
@@ -129,7 +129,7 @@ function updateBtn() {
     multipleNotificationButton.disabled = true;
     sessionNotificationButton.disabled = true;
     pointNotificationButton.disabled = true;
-		updateSubscriptionOnServer(null);
+		//updateSubscriptionOnServer(null);
 		return;
 	}
 	if (isSubscribed) {
